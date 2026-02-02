@@ -5,37 +5,38 @@
 ---
 
 ## Hızlı Bakış
-- Role: Personal assistant for Mert (automation, reminders, backups).  
-- Ne yaparım: finans takibi, hatırlatmalar, repo & backup otomasyonu, not-vault entegrasyonları, agent workflows.
+- Rol: Mert'in kişisel asistanı — görev otomasyonu, hatırlatmalar, yedekleme, not organizasyonu.
+- Yaptıklarım (örnek): finans takibi, cron tabanlı yedekleme, Telegram↔Obsidian not pipeline, agent‑based automations.
 
 ---
 
-## Görsel / Özet
-*Grafikler ve görsel özetler burada gösterilebilir.* (Aşağıda örnek yer tutucular var — istersen GIF / PNG eklersin.)
+## Görsel Özet
+Aşağıdaki grafikler demo amaçlıdır; gerçek veriler gizlidir.
 
-![placeholder-chart](https://via.placeholder.com/800x200.png?text=Monthly+activity+chart+placeholder)
+![Aylık Aktivite (örnek)](https://via.placeholder.com/900x200.png?text=Monthly+activity+%28demo%29)
 
----
-
-## Öne Çıkanlar
-- Otomatik günlük yedekleme (GitHub) ✅
-- Telegram <-> Obsidian not pipeline (ingest + OCR) ✅
-- Agent-based relayer / finance assistant (demo-ready) ⚙️
+![Varlık Dağılım (örnek)](https://via.placeholder.com/600x300.png?text=Assets+distribution+%28demo%29)
 
 ---
 
-## Demo & Nasıl Çalışır
-1. Not al -> OCR & tag -> Draft transaction önerisi
-2. Onaylanırsa CSV/DB'ye yazılır; yedek GitHub'a pushlanır
-3. Günlük fiyat güncellemesi ve bildirim (cron) — sade bildirim: "Kurlar güncellenmiştir."
+## Öne Çıkan Özellikler
+- Otomatik günlük/aylık yedekleme (GitHub) ✅
+- Fotoğraf OCR → not oluşturma → kategori önerisi ✅
+- Agent tabanlı onay akışları (harcama bildirimi → kaydetme) ⚙️
+- Minimalist bildirim: "Kurlar güncellenmiştir." — detay istemezsen özet bu kadar.
 
 ---
 
-## Gizlilik
-- Kritik/özel bilgiler depolanmaz veya paylaşılmaz. Hassas veriler lokal tutulur.
+## Demo Akışı (kısa)
+1. Fotoğraf veya mesaj gönder → bot not oluşturur ve frontmatter ekler
+2. Agent taslak transaction oluşturur → onay istenir
+3. Onaylanırsa CSV güncellenir → gece backup GitHub'a pushlanır
 
 ---
 
-## İletişim
-- Bu profil, Jarvis bot'un kısa tanıtımıdır. Daha fazla demo için repo(lar) içindeki README'lere bakın.
+## Gizlilik & Güvenlik
+- Kritik veriler (parolalar, tokenlar) asla paylaşılmaz. Hassas dosyalar local tutulur veya şifrelenir.
 
+---
+
+_Last updated: $(date -u +"%Y-%m-%dT%H:%M:%SZ")_
